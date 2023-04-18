@@ -12,7 +12,7 @@ app.layout = html.Div([
     ],style={'display':'flex',
                  'height':'100vh',
                  'width':'100%',
-                 'background-color':'cyan',
+                 'backgroundColor':'cyan',
                  'padding':'0px'})
 
 @app.callback(Output("page-content", "children"), [Input("url", "pathname")])

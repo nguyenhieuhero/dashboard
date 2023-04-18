@@ -1,6 +1,6 @@
 from dash import html
 page1=html.Div(className="app-page1",
                children=[
-                html.H1("Page 1")
+                html.H1("Page 1",className="p1-label")
 
                ])
