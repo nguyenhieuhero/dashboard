@@ -1,16 +1,22 @@
 from dash import html,dcc
-from assets.components.graphs.test import fig as f1
-page1=html.Div(className="app-page1",
+import base64
+from assets.components.graphs.distribute import fig
+iLC = base64.b64encode(open("assets\image\LC.png", 'rb').read())
+iSME = base64.b64encode(open("assets\image\SME.png", 'rb').read())
+iSSE = base64.b64encode(open("assets\image\SSE.png", 'rb').read())
+page=html.Div(className="app-page",
                children=[
-                html.H1("Truc quan du lieu",className="p1-label"),
+                html.H1("Trực quan dữ liệu",className="p-label"),
                 html.Div([
                     html.Div([
-                        dcc.Graph(figure=f1,className="r2"),
+                        dcc.Graph(figure=fig,className="fit",id="db"),
                     ],className="r3"),
                     
+                    
                     html.Div([
-                        html.Div([],className="r2"),
-                        html.Div([],className="r1"),
+                        html.Img(src='data:image/png;base64,{}'.format(iSSE.decode())),
+                        html.Img(src='data:image/png;base64,{}'.format(iSME.decode())),
+                        html.Img(src='data:image/png;base64,{}'.format(iLC.decode())),
                     ],className="r-wrapper")
                 ],className="main-page")
                ])

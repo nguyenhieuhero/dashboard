@@ -1,13 +1,13 @@
 body {
     margin:0px
 }
-.app-page1 {
-    background-color: blue;
+.app-page {
+    /* background-color: blue; */
     height: 100%;
     width: 100%;
     margin: 0px;
 }
-.p1-label {
+.p-label {
     display: flex;
     align-items: center;
     margin: 0px;
@@ -18,6 +18,7 @@ body {
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
+    font-family: Arial, sans-serif;
     /* identical to box height */
 
 
@@ -27,34 +28,82 @@ body {
     height: 95%;
     width: 100%;
     margin: 0px;
-    background-color: red;
+    background-color: #F8F9FF;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
 }
+.row-wrapper {
+    height: 95%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+.r4 {
+    height: 100%;
+    width: 70%;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
+.r4-subbar {
+    height: auto;
+    width: 200px;
+    /* background-color: red; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
 .r3 {
     height: 55%;
     width: 96%;
-    background-color: aliceblue;
-    border-radius: 6px;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+    display: flex;
 }
 .r-wrapper {
     width: 96%;
     height: 40%;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: space-between;
+}
+.r25 {
+    width: 80%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
 }
 .r2 {
     width: 55%;
     height: 100%;
-    background-color: aliceblue;
-    border-radius: 6px;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
+.r15 {
+    width: 40%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
 }
 .r1 {
-    width: 43%;
+    width: 30%;
     height: 100%;
-    background-color: aliceblue;
-    border-radius: 6px;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 5px 10px #F1F2FA;
+    border-radius: 8px;
+}
+.fit {
+    width: 100%;
+    height: 100%;
 }
