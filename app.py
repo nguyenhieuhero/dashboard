@@ -1,17 +1,18 @@
 import dash_bootstrap_components as dbc
 from dash import Dash, html, Input, Output, State,dcc
 from assets.components.sidebar import offcanvas
-from assets.components.page1 import page1
+from assets.components.page import page1
+
 
 app = Dash(__name__)
 
 app.layout = html.Div([
     dcc.Location(id="url"),
     offcanvas,
-    html.Div(id="page-content")
+    html.Div(id="page-content",style={"width":"85%","height":"100wh",'backgroundColor':'green'})
     ],style={'display':'flex',
                  'height':'100vh',
-                 'width':'100%',
+                 'width':'100vw',
                  'backgroundColor':'cyan',
                  'padding':'0px'})
 

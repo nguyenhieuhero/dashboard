@@ -3,7 +3,7 @@ from dash import Input, Output, State, html
 
 offcanvas = html.Div(className="app-sidebar",
     children=[
-        html.P("Sidebar", className="sb-name"),
+        html.P("Dashboard", className="sb-name"),
         html.P("MAIN MENU", className="sb-main-menu"),
         dbc.Nav(
             [
